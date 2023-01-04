@@ -1,5 +1,5 @@
 function formvalidation(){
-    let btn;
+    let submission;
 
     var name = document.getElementById('Name').value.trim();
     var Email = document.getElementById('Email').value.trim();
@@ -9,7 +9,7 @@ function formvalidation(){
 
     if(name ==="" || Email ==="" || phone ==="" || msg ==="")
     {
-        btn=false;
+        submission=false;
         
         alert('Please fill all fields');
         
@@ -18,13 +18,13 @@ function formvalidation(){
         alert('Please enter a valid Email adress');
 
     
-        btn=flase;
+        submission=flase;
     }
     else if(!/^\d+$/.test(phone)){
         alert('Please enter a valid Phone number');
 
-        btn=false;
+        submission=false;
     }
     
-    return btn;
+    return submission;
 }
