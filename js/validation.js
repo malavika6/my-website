@@ -13,8 +13,8 @@ function formvalidation(){
         
         alert('Please fill all fields');
         
-        
-    }else if(!/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+).([a-z]+)?$/.test(Email)){
+    }
+    else if(!/^([a-zA-Z0-9\._]+)@([a-zA-Z0-9]+).([a-z]+).([a-z]+)?$/.test(Email)){
         alert('Please enter a valid Email adress');
 
     
